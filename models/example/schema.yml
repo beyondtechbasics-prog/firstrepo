@@ -24,3 +24,8 @@ models:
         data_tests:
           - unique
           - not_null
+  - name: my_third_dbt_model
+    description: "Tabel for capturing incremental employee data"
+  - name: my_fourth_dbt_model
+    description : "Emplemetal testing"
+         
