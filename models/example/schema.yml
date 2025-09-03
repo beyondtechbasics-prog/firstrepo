@@ -28,4 +28,3 @@ models:
     description: "Tabel for capturing incremental employee data"
   - name: my_fourth_dbt_model
     description : "Emplemetal testing"
-         
