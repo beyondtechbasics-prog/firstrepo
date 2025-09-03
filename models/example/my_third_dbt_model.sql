@@ -8,7 +8,7 @@ SELECT
        empname,
        salary,
        updated_at,
-       is_deleted AS is_deleted,
+       is_deleted,
        '{{ invocation_id}}' AS run_id
 FROM {{ source('my_database','employeedata') }}
 {% if is_incremental() %}
