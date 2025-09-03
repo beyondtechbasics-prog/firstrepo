@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: my_database
+    schema: main
+    tables:
+      - name: employeedata
+        description: "Raw data of Employee"
+        columns: 
+          - name: empid
+            description: "Primary Key "
+            data_tests: 
+              - unique
+              - not_null
+          - name: empname
+            description: "Name of Employee"
+            data_tests:
+              - not_null
+          - name: salary
+            description: "Salary of Employee in Pounds"
+            data_tests:
+               - not_null
+          - name: is_deleted
+            description: "Flag to show logically deleted data"
+            data_tests:
+               - not_null
+            
+
+   

@@ -1,0 +1,9 @@
+dbtfirst:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'C:/Users/akank/my_database.duckdb'  # Change to your preferred local path
+      extensions:
+        - httpfs
+        - parquet
