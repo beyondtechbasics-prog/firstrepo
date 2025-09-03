@@ -1,7 +1,7 @@
 {{ config(materialized='incremental',
 unique_key='empid',
 incremental_strategy='delete+insert',
-full_refresh=false) }}
+full_refresh=true) }}
 
 SELECT 
        empid,
